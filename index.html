@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Africa Cold | Leading Industrial Engineering & Construction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#004A99',
+                        secondary: '#FF6B00',
+                        dark: '#1A1A1A',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80'); background-size: cover; background-position: center; }
+    </style>
+</head>
+<body class="bg-gray-50 text-dark">
+
+    <!-- Header & Navigation -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary tracking-tighter">AFRICA<span class="text-secondary">COLD</span></a>
+            <div class="hidden md:flex space-x-8 font-semibold text-sm uppercase">
+                <a href="#home" class="hover:text-primary transition">Home</a>
+                <a href="#services" class="hover:text-primary transition">Services</a>
+                <a href="#tools" class="hover:text-primary transition">Interactive Tools</a>
+                <a href="#management" class="hover:text-primary transition">Management</a>
+                <a href="#contact" class="hover:text-primary transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t p-4 flex flex-col space-y-4 font-semibold uppercase text-center">
+            <a href="#home" onclick="toggleMenu()">Home</a>
+            <a href="#services" onclick="toggleMenu()">Services</a>
+            <a href="#tools" onclick="toggleMenu()">Interactive Tools</a>
+            <a href="#management" onclick="toggleMenu()">Management</a>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient h-screen flex items-center text-white pt-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Africa Cold - Your Trusted Partner in Major Projects.</h1>
+                <p class="text-xl md:text-2xl mb-8 text-gray-200">Leading solutions in construction, public works, industrial air conditioning, electrical networks, and metal structures.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="bg-secondary hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition shadow-lg">Get a Quote</a>
+                    <a href="#services" class="bg-white/20 hover:bg-white/30 backdrop-blur-md text-white border border-white/50 px-8 py-4 rounded-lg font-bold text-lg transition">Our Expertise</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Expertise Section -->
+    <section id="services" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Our Expertise</h2>
+                <div class="w-20 h-1.5 bg-secondary mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Cards -->
+                <div class="p-8 border border-gray-100 rounded-2xl bg-gray-50 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Major Public Works & Irrigation</h3>
+                    <p class="text-gray-600">Comprehensive infrastructure execution including hydraulic systems and large-scale public developments.</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-2xl bg-gray-50 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Air Conditioning & Refrigeration</h3>
+                    <p class="text-gray-600">Specialized central cooling systems for industrial and commercial facilities in extreme climates.</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-2xl bg-gray-50 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Industrial Thermal Equipment</h3>
+                    <p class="text-gray-600">Advanced energy heating solutions and thermodynamic systems for industrial processes.</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-2xl bg-gray-50 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Construction Works</h3>
+                    <p class="text-gray-600">Architectural projects delivered with precision, from concept to high-quality completion.</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-2xl bg-gray-50 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Electrical Networks</h3>
+                    <p class="text-gray-600">Low and high voltage electrical installations and modern telecommunication centers.</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-2xl bg-gray-50 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition">
+                        <i class="fas fa-fences"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Metal Structures</h3>
+                    <p class="text-gray-600">Precision engineering and assembly of heavy-duty steel buildings and frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Client Tools -->
+    <section id="tools" class="py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-primary">Interactive Calculation Modules</h2>
+                <p class="text-gray-600">Real-time engineering tools for your preliminary project estimates.</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Tool A: Cable Capacity Calculator -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-primary/10">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Cable Capacity Calculator</h3>
+                    </div>
+                    <form id="cableForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Voltage (V)</label>
+                                <input type="number" id="voltage" value="230" class="w-full p-3 bg-gray-50 border rounded-lg focus:ring-2 focus:ring-primary outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Current (A)</label>
+                                <input type="number" id="current" placeholder="e.g. 50" class="w-full p-3 bg-gray-50 border rounded-lg focus:ring-2 focus:ring-primary outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Distance (m)</label>
+                                <input type="number" id="distance" placeholder="e.g. 100" class="w-full p-3 bg-gray-50 border rounded-lg focus:ring-2 focus:ring-primary outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Material</label>
+                                <select id="material" class="w-full p-3 bg-gray-50 border rounded-lg focus:ring-2 focus:ring-primary outline-none">
+                                    <option value="copper">Copper</option>
+                                    <option value="aluminum">Aluminum</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="cableResult" class="p-4 bg-primary/5 rounded-xl border border-primary/20 hidden">
+                            <p class="text-sm text-gray-600">Recommended Size:</p>
+                            <p class="text-2xl font-bold text-primary" id="cableOutput">0 mm²</p>
+                        </div>
+                        <button type="button" onclick="calculateCable()" class="w-full bg-primary text-white py-4 rounded-xl font-bold hover:bg-blue-800 transition">Calculate Recommendations</button>
+                        <button type="button" class="w-full border-2 border-primary text-primary py-4 rounded-xl font-bold hover:bg-primary hover:text-white transition hidden" id="cableQuote">Request a Quote based on these calculations</button>
+                    </form>
+                </div>
+
+                <!-- Tool B: Cooling Load Estimator -->
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-secondary/10">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white">
+                            <i class="fas fa-snowflake"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Cooling Load Estimator</h3>
+                    </div>
+                    <form id="coolingForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Length (m)</label>
+                                <input type="number" id="length" placeholder="m" class="w-full p-3 bg-gray-50 border rounded-lg focus:ring-2 focus:ring-secondary outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Width (m)</label>
+                                <input type="number" id="width" placeholder="m" class="w-full p-3 bg-gray-50 border rounded-lg focus:ring-2 focus:ring-secondary outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Height (m)</label>
+                                <input type="number" id="height" value="3" class="w-full p-3 bg-gray-50 border rounded-lg focus:ring-2 focus:ring-secondary outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Usage Type</label>
+                                <select id="usage" class="w-full p-3 bg-gray-50 border rounded-lg focus:ring-2 focus:ring-secondary outline-none">
+                                    <option value="1">Standard Office</option>
+                                    <option value="1.5">Industrial / Data Center</option>
+                                    <option value="1.2">Residential</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="coolingResult" class="p-4 bg-secondary/5 rounded-xl border border-secondary/20 hidden">
+                            <p class="text-sm text-gray-600">Estimated Requirement:</p>
+                            <p class="text-2xl font-bold text-secondary" id="coolingOutput">0 BTU/hr</p>
+                        </div>
+                        <button type="button" onclick="calculateCooling()" class="w-full bg-secondary text-white py-4 rounded-xl font-bold hover:bg-orange-600 transition">Estimate Cooling Load</button>
+                        <button type="button" class="w-full border-2 border-secondary text-secondary py-4 rounded-xl font-bold hover:bg-secondary hover:text-white transition hidden" id="coolingQuote">Request a Quote based on these calculations</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="management" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Leadership & Vision</h2>
+                <div class="w-20 h-1.5 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div class="text-center p-8 bg-gray-50 rounded-3xl border-b-4 border-primary">
+                    <div class="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl text-gray-400">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-1">Mr. Charef ABDELAALI</h3>
+                    <p class="text-primary font-semibold mb-4 uppercase tracking-wider">General Manager & Supervisor</p>
+                    <p class="text-gray-600 italic">Overseeing the strategic direction and execution of major infrastructure and industrial projects across Algeria.</p>
+                </div>
+                <div class="text-center p-8 bg-gray-50 rounded-3xl border-b-4 border-secondary">
+                    <div class="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl text-gray-400">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-1">Dr. Charef AMINA</h3>
+                    <p class="text-secondary font-semibold mb-4 uppercase tracking-wider">Consultant & QA Expert</p>
+                    <p class="text-gray-600 italic">Leading project development initiatives and ensuring global standards in quality assurance and sustainable engineering.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-dark text-white">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8">Get In Touch</h2>
+                    <p class="text-gray-400 mb-12 text-lg">Partner with Africa Cold for your next industrial milestone. Our experts are ready to provide technical support and customized solutions.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-6">
+                            <div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-primary text-xl">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">Email Address</p>
+                                <p class="text-xl font-semibold">info@africacold.fr</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-primary text-xl">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">Main Office</p>
+                                <p class="text-xl font-semibold">Biskra, Algeria</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl">
+                    <form class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Your Name" class="w-full p-4 bg-gray-100 border-none rounded-xl text-dark outline-none focus:ring-2 focus:ring-primary">
+                            <input type="email" placeholder="Email Address" class="w-full p-4 bg-gray-100 border-none rounded-xl text-dark outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <input type="text" placeholder="Project Type" class="w-full p-4 bg-gray-100 border-none rounded-xl text-dark outline-none focus:ring-2 focus:ring-primary">
+                        <textarea placeholder="Your Message" rows="5" class="w-full p-4 bg-gray-100 border-none rounded-xl text-dark outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        <button class="w-full bg-primary text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-800 transition shadow-lg">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark border-t border-white/10 py-12 text-center text-gray-500">
+        <div class="container mx-auto px-6">
+            <p class="mb-4">Copyright © 2026 <span class="text-white font-bold">AFRICA COLD</span>. All Rights Reserved.</p>
+            <div class="flex justify-center gap-6 text-xl">
+                <a href="#" class="hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
